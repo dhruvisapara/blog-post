@@ -25,8 +25,8 @@ class BlogView(LoginRequiredMixin, ListView):
             also filter by search query
         """
         query = self.request.GET.get("title")
-        # logging.getLogger().setLevel(logging.INFO)
-        # logger.info('something')
+        logging.getLogger().setLevel(logging.INFO)
+        logger.info('something')
         if query:
             object_list = Blog.objects.filter(
                 Q(title__icontains=query) | Q(description__icontains=query) | Q(user__username__icontains=query)

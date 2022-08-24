@@ -1,5 +1,3 @@
-import asyncio
-import json
 from channels.consumer import AsyncConsumer
 from random import randint
 from time import sleep

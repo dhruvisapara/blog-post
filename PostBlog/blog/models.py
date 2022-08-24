@@ -14,9 +14,18 @@ class Blog(models.Model):
     highlights = models.CharField(max_length=500, default=None)
     formset_image = models.ImageField(upload_to='images', null=True, blank=True)
     slug = models.SlugField(null=False, unique=True)
+    is_active = models.IntegerField(default=1,
+                                    blank=True,
+                                    null=True,
+                                    help_text='1->Active, 0->Inactive',
+                                    choices=(
+                                        (1, 'Active'), (0, 'Inactive')
+                                    ))
 
     def __str__(self):
         return self.title
+
+
 
     def save(self, *args, **kwargs):
         super(Blog, self).save(*args, **kwargs)
