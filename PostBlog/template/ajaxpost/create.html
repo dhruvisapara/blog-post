@@ -1,0 +1,67 @@
+{% extends 'base1.html' %}
+
+{% block content %}
+<button type="button" id="button_1">click</button>
+<button type="button" id="button_2">onclick</button>
+
+<ul id="click_id">
+  <li>Click Here 1</li>
+  <li>Click Here 2</li>
+  <li>Click Here 3</li>
+  <li>Click Here 4</li>
+</ul>
+<form>
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" id="title" placeholder="Enter title">
+    </div>
+    <div class="form-group">
+      <label>Description</label>
+      <textarea id="description" class="form-control" placeholder="Enter description"></textarea>
+    </div>
+    <button type="button" id="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
+      $("#click_id li").click(function() {
+           $(this).remove();
+           $('#click_id').append('<button  id="CLICK">Clique-me</button>');
+
+           $("#CLICK").on("click",function(){
+           alert ('On click');
+           });
+
+           $("#CLICK").click(function(){
+           alert('clicked');
+           });
+      });
+      $(document).click('#button_1',function(e){
+      e.preventDefault();
+      alert ('Thank You! for performing click event on button.');
+      });
+
+      $(document).on("click",'#button_2',function(e){
+      e.preventDefault();
+      alert ('Thank You! for performing onclick event.');
+      });
+
+      $(document).on('click', '#submit', function(e) {
+        var formdata=$(this).serialize()
+          $.ajax({
+              type: 'POST',
+              url: 'create-post/',
+              data: formdata,
+              dataType: 'json',
+              success: function (data){
+                  alert('The post has been created!')
+              },
+               error: function(){
+                        alert('fail')
+                    }
+
+          });
+      });
+</script>
+
+{% endblock %}

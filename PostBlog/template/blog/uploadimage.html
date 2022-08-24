@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>uploadimage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+{%load rest_framework%}
+<form method="post"  enctype="multipart/form-data">
+    <h3 style="color:darkblue; text-align:center">upload image</h3>
+    {% csrf_token %}
+    {% render_form serializer %}
+    <br>
+    <button>submit</button>
+</form>
+
+</body>
+</html>

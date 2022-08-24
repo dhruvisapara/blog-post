@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+{% if user.user_type == 'staff' %}
+
+    {% block navbar %}{% include 'navbar.html' %}{% endblock %}
+
+    {% if user.is_authenticated %}
+        <p style="color: blueviolet">Welcome back {{ user.username }} !!! - {{user.user_type}}</p>
+    {%endif%}
+
+    {% if user.parent %}
+     <p style="color: blueviolet">Your Manager is {{ user.parent }}</p>
+    {% endif %}
+
+    {% if blog_listing %}
+        {% block blog_dis %}{% include 'index/blog_dis.html' %}{% endblock %}
+        {% block pagination %}{% include 'index/pagination.html' %}{% endblock %}
+
+    {% else %}
+            <p>No blogs are available.</p>
+    {% endif %}
+
+{%else%}
+
+    <p>{{user.username}} You are not a manager</p>
+    <a href="{%url 'user:login'%}">login again</a>
+
+{%endif%}
+
+</body>
+</html>

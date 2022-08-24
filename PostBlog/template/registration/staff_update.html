@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>staff_update</title>
+</head>
+<body>
+<form method="post">
+          <h5 style="color:cadetblue">do you really want to change this information</h5>
+          {%csrf_token%}
+            {{ form.as_p }}
+         <button style="color:blue; font-size:20px" type="submit">Submit</button>
+        </form>
+</body>
+</html>

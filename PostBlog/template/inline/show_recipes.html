@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Recipes</title>
+</head>
+<body>
+
+   <table >
+       {% for recipes in recipe_list %}
+  <tr>
+    <td style="color:darkblue;font-size:25px;">{{recipes.title}}</td>
+      <tr>
+      <td style="color:darkblue;">{{recipes.description}}</td>
+        </tr>
+       <tr>
+      <td style="color:darkblue">{{recipes.name}}</td>
+       </tr>
+  </tr>
+{% endfor %}
+</table>
+</body>
+</html>

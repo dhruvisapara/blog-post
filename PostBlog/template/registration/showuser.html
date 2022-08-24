@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>youruser</title>
+</head>
+<body>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+   <table style="width:100%">
+  <tr>
+    <th style="color:darkblue">User</th>
+    <th style="color:darkblue">Delete</th>
+    <th style="color:darkblue">update</th>
+  </tr>
+       {% for users in your_user%}
+  <tr>
+    <td style="color:darkblue;margin-left:50px">{{users.username}}</td>
+    <td><a  href="{%url 'user:delete_user' pk=users.id%}"><button style="color:red;">Delete</button></a></td>
+    <td><a  href="{%url 'user:update_staff' pk=users.id%}"><button style="color:red;">update</button></a></td>
+  </tr>
+       <tr>
+            <td><br></td>
+       </tr>
+{% endfor %}
+</table>
+</body>
+</html>

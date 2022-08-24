@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>manager</title>
+</head>
+<body>
+
+{% if user.user_type == 'manager' %}
+
+    {% block navbar %}{% include 'navbar.html' %}{% endblock %}
+    <h1>Welcome back manager {{user.username}}</h1>
+    <p>only staff members can edit the information</p>
+
+{% elif user.user_type == 'staff'%}
+
+    {% block home %}{% include 'index.html' %}{% endblock %}
+
+{%else%}
+
+    {% block navbarforstaff %}{% include 'navbar.html' %}{% endblock %}
+    <h1>Welcome Back - {{user.username}}</h1>
+    <h1>{{user.user_type}}</h1>
+    <p>only staff can see and edit the information</p>
+
+{%endif%}
+
+</body>
+</html>

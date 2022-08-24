@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+   <h3 style="color:cadetblue;text-align:center">Edit yor blog</h3>
+
+      {%load rest_framework%}
+      <form method="post">
+          <h5 style="color:cadetblue">do you really want to change this information</h5>
+          {%csrf_token%}
+          {% render_form serializer template_pack='rest_framework/vertical' %}
+         <button style="color:blue; font-size:20px" type="submit">Submit</button>
+      </form>
+   </body>
+</html>

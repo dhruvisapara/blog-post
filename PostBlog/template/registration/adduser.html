@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>adduser</title>
+</head>
+<body>
+<form method="post">
+    <h2>Add user</h2>
+    {% csrf_token %}
+    {{ form.as_p }}
+     <button style="background-color:green" type="submit">Register</button>
+
+</form>
+
+</body>
+</html>

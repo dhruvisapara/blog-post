@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home_start</title>
+
+</head>
+<body>
+<div class="container2" style="background-color:#f1f1f1;padding:15px;">
+
+    <h1 style="color:#234077 ">{{blogs.title}}</h1>
+
+    {% if blogs.user.parent %}
+    <h3 style="color:darkblue">Published by-{{blogs.user.parent}}</h3>
+    {%else%}
+    <h3 style="color:darkblue">Published by-{{blogs.user.username}}</h3>
+
+    {% endif %}
+
+    <p style="color:#BD3469 ">{{blogs.highlights}}</p>
+    <p style="color:darkblue;margin-left:900px">{{ blogs.pub_date }}</p>
+    {% block likes %}{% include 'like/add_like.html' %}{% endblock %}
+</div>
+<br><br>
+</body>
+</html>

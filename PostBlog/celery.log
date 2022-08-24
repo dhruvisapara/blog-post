@@ -1,0 +1,140 @@
+[2022-08-08 13:53:07,831: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-08-08 13:53:07,835: INFO/MainProcess] mingle: searching for neighbors
+[2022-08-08 13:53:08,845: INFO/MainProcess] mingle: all alone
+[2022-08-08 13:53:08,858: WARNING/MainProcess] /home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-08-08 13:53:08,859: INFO/MainProcess] celery@smtp.gmail.com ready.
+[2022-08-08 13:54:00,013: ERROR/MainProcess] Received unregistered task of type 'comment_mail'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'comment_mail', 'id': 'f93431a6-388c-482d-8ce7-9c16a7ae2f64', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'f93431a6-388c-482d-8ce7-9c16a7ae2f64', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen105856@smtp.gmail.com', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'comment_mail'
+[2022-08-08 13:55:00,048: ERROR/MainProcess] Received unregistered task of type 'comment_mail'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'comment_mail', 'id': 'c42c7dee-c766-43a2-a920-b3b049e9909b', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'c42c7dee-c766-43a2-a920-b3b049e9909b', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen105856@smtp.gmail.com', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'comment_mail'
+[2022-08-08 13:59:00,036: ERROR/MainProcess] Received unregistered task of type 'last_five_hour_file'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'last_five_hour_file', 'id': '5dfd9a62-6737-4aa7-82c9-44f273cd2fb7', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '5dfd9a62-6737-4aa7-82c9-44f273cd2fb7', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen108078@smtp.gmail.com', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'last_five_hour_file'
+[2022-08-08 14:01:00,011: ERROR/MainProcess] Received unregistered task of type 'last_five_hour_file.py'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'last_five_hour_file.py', 'id': '69aeb4d8-32bb-470e-ad3c-eb61b89434f8', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '69aeb4d8-32bb-470e-ad3c-eb61b89434f8', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen108444@smtp.gmail.com', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'last_five_hour_file.py'
+[2022-08-08 14:03:00,051: ERROR/MainProcess] Received unregistered task of type 'last_five_hour_file.py'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'last_five_hour_file.py', 'id': '3a84f2f9-155a-4cda-ba24-3e4bb0657b77', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '3a84f2f9-155a-4cda-ba24-3e4bb0657b77', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen108444@smtp.gmail.com', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'last_five_hour_file.py'
+[2022-08-08 14:08:00,058: ERROR/MainProcess] Received unregistered task of type 'execute_file'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'execute_file', 'id': '2fc26297-4948-435c-9939-e78c66d123e1', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '2fc26297-4948-435c-9939-e78c66d123e1', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen109473@smtp.gmail.com', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'execute_file'

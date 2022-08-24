@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<form class="form-horizontal" method="POST" action="{% url 'blog:blog_formset'%}">
+{% csrf_token %}
+{{ formset.management_form }}
+{% for form in formset %}
+<div class="row form-row spacer">
+    <div class="col-2">
+        <label style="margin-left:100px;">{{form.title.label}}</label>
+    </div>
+    <div class="col-4">
+        <div style="margin-left:100px;" class="input-group">
+            {{form.id}}
+            {{form.title}}
+            <div class="input-group-append">
+                <button class="btn btn-success add-form-row">+</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div class="row spacer">
+    <div class="col-4 offset-2">
+        <button type="submit" class="btn btn-block btn-primary">Create</button>
+    </div>
+</div>
+</form>
+{% endblock %}
+{% block javascript %}
+<script src="{%static 'updateformset.js'%}"></script>
+{% endblock %}
+

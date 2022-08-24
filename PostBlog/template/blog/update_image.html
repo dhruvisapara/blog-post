@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update image</title>
+</head>
+<body>
+<h3 style="color:cadetblue;text-align:center">change images</h3>
+    {%load rest_framework%}
+      <form method="post" >
+          {%csrf_token%}
+          {% render_form serializer %}
+         <button style="color:blue; font-size:20px" type="submit">Submit</button>
+      </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossorigin="anonymous"/>
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(event){
+            $(document).on('click', '#likebtn', function(event){
+
+                var btn=$(this)
+                var pk = $(this).attr('value');
+                $.ajax({
+                    type : 'POST',
+                    url : '{% url 'user_like:like-blog' blogs.id %}',
+                    data : {'csrfmiddlewaretoken': '{{ csrf_token }}'},
+                    dataType : 'json',
+                    success : function(response){
+                         if(response.message = 'successfully'){
+
+                         console.log('liked successfully')
+                         btn.hide();
+                         }
+                         else{
+                        console.log('not liked');
+                    }
+                    },
+                    error : function(rs, e){
+                        console.log(rs.responseText);
+                    },
+                });
+            });
+        });
+
+    </script>
+</head>
+<body>
+<button type='submit' name='like' id="likebtn" value="{{ blogs.id }}" class="btn btn-primary">Like</button>
+</body>
+</html>

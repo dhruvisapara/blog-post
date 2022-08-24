@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blog image</title>
+        <style>
+
+      @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+    </style>
+</head>
+<body>
+
+   <div style="margin-left:250px">
+
+            {% for post in blogs.image.all %}
+            {% if forloop.first %}
+                <img style="margin-left:180px" class="rotate" width="300" height="300" class="abc" src="{{post.post_image.url}}">
+            {%endif%}
+            {% endfor %}
+
+   </div>
+   <br><br>
+
+</body>
+</html>

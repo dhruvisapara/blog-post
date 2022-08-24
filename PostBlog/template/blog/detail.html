@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+.container2 {
+    width:100%;
+    height:auto;
+    padding:1%;
+}
+</style>
+</head>
+<body>
+    {%for detail in detail_listing%}
+        <div style="background-color:#f1f1f1;padding:15px;">
+
+
+            <h1 style="color:#234077 ">{{detail.title}}</h1>
+            <h3 style="color:darkblue">Published by-{{detail.user.username}}</h3>
+            <h3 style="color:darkblue">{{detail.user.profession}}</h3>
+<!--              <img src="{{detail.user.profile_image.url}}"  style="width:200px">-->
+            <p style="color:#BD3469 ">{{detail.highlights}}</p>
+
+            <p style="color:darkblue;margin-left:900px">{{ detail.pub_date }}</p>
+
+        </div>
+        <div class= "container2" style="margin-left:200px">
+            {% for post in detail.image.all %}
+                <img  width="250" height="250" class="abc" src="{{post.post_image.url}}">
+            {% endfor %}
+
+        </div>
+        <style>
+
+              .dis{
+                      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                      max-width: 1000px;
+                      margin: auto;
+                      text-align: center;
+                      font-family: arial;
+                }
+
+        </style>
+        <div class="dis">
+            <p style="color:#BD3469;font-size:18px" >{{ detail.description}} </p>
+            <form  action="{%url 'userlike:like' pk=detail.id%}" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" value="user_like" name="blog_like">
+                    <button style="color:green" class="fa fa-thumbs-up" id="likes" type="submit">Like</button>
+
+            </form>
+            <br>
+            <a style="margin-lef:10px" href="{%url 'blog:comment' %}">write your comments..</a>
+
+            <br><br>
+        </div>
+    {%endfor%}
+</body>
+</html>

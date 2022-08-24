@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+<title>Contact Form</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center display-4">Contact Form</h1>
+        <p class="lead text-center">This is sample example for integration of AJAX with Django</p>
+    </div>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-sm-6 ">
+            <form id="contactForm" method="POST" action="{% url 'contact:contact_submit' %}">{% csrf_token %}
+                {{ contactForm.as_p }}
+                <input type="submit" name="contact-submit" class="btn btn-primary"/>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-md-8">
+    <h3>Contacts</h3>
+    <table id="contacttable" class="table table-striped">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th colspan="3">Message</th>
+        </tr>
+        {% if contacts %}
+        {% for contact in contacts %}
+        <tr id="contact-{{contact.id}}">
+            <td class="userName userData" name="name">{{contact.name}}</td>
+            <td class="userAddress userData" name="address">{{contact.email}}</td>
+            <td class="userAge userData" name="age">{{contact.message}}</td>
+        </tr>
+        {% endfor %}
+        {% else %}
+        No Contacts
+        {% endif %}
+    </table>
+</div>
+{% endblock %}
+{% block javascript %}
+<script src="{%static 'contact_user.js'%}"></script>
+{% endblock %}

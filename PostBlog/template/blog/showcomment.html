@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display comment</title>
+    <a href="{% url 'blog:home'%}">back to home</a>
+</head>
+<body>
+{% for comm in comment_listing%}
+    {% if forloop.first %}
+        <h1 style="color:#234077 ">{{comm.blog.title}}</h1>
+    {% endif %}
+    <h3 style="color:darkblue">{{comm.comment.username}}</h3>
+    <p style="color:#BD3469 ">{{comm.comment.email}}</p>
+    <p style="color:darkblue">{{ comm.body }}</p>
+
+{%endfor%}
+
+</body>
+</html>

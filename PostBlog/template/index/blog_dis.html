@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blog dis</title>
+    <style>
+    .container2 {
+        width:100%;
+        height:auto;
+        padding:1%;
+    }</style>
+    <style>
+
+      .dis{
+
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              max-width: 900px;
+              margin: auto;
+              text-align: center;
+              font-family: arial;
+        }
+
+    </style>
+</head>
+<body>
+
+    {% for blogs in blog_listing %}
+
+       {% block home_start %}{% include 'index/home_page_starting_information.html' %}{% endblock %}
+
+        <!-- all images for particular blogs come from here -->
+
+     {% block blog_image %}{% include 'index/blog_related_images.html' %}{% endblock %}
+
+    <div class="dis">
+        <p style="color:#BD3469;font-size:18px" >{{ blogs.description | truncatechars_html:400  }}<a href="{% url 'blog:detail' pk=blogs.id%}">Read more</a></p>
+        <br>
+        <a href="{% url 'blog:comment' blogs.id %}">write your comments..</a>
+        <a href={{blogs.id}} style="margin-left:600px">Show comment</a>
+        <br><br>
+    </div>
+    <br>
+
+    {% endfor %}
+
+</body>
+</html>

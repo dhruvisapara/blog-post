@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>navbar</title>
+    <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+
+            li {
+              float: left;
+            }
+
+            li a {
+
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+
+            li a:hover {
+              background-color: #111;
+            }
+</style>
+</head>
+<body>
+    <ul>
+        {% if request.user.user_type == 'staff'%}
+
+        {% if request.user.is_authenticated %}
+              <li class="{% if  request.resolver_match.url_name == 'blog:home' %}active{% endif %}"><a class="active" href="{% url 'blog:home'%}">Home</a></li>
+              <li class="{% if  request.resolver_match.url_name == 'user:profile' %}active{% endif %}"><a href="{%url 'user:profile'%}">Profile</a></li>
+              <li class="{% if  request.resolver_match.url_name == 'blog:add' %}active{% endif %}"><a href="{% url 'blog:add'%}">Create Your Blog</a></li>
+              <li class="{% if  request.resolver_match.url_name == 'user:delete' %}active{% endif %}"><a href="{% url 'user:delete'%}">Remove account</a></li>
+              <li><a href="{% url 'blog:userblog'%}">your blog</a></li>
+              <li class="{% if  request.resolver_match.url_name == 'user:logout' %}active{% endif %}" ><a href="{% url 'user:logout'%}" >Logout</a></li>
+              <li class="{% if  request.resolver_match.url_name == 'user:parmission' %}active{% endif %}" ><a href="{% url 'user:parmission'%}" >Set permission</a></li>
+              <li class="{% if  request.resolver_match.url_name == 'user:group' %}active{% endif %}" ><a href="{% url 'user:group'%}" >group</a></li>
+
+
+              <form action="{% url 'blog:home' %}" method="GET">
+                  {% csrf_token %}
+                  <input style="margin-top:15px;margin-left:190px" type="text" placeholder="search here" name='title'>
+              </form>
+        {%endif%}
+
+        {%elif request.user.user_type == 'manager'%}
+             <li class="{% if  request.resolver_match.url_name == 'user:logout' %}active{% endif %}" ><a href="{% url 'user:logout'%}" >Logout</a></li>
+             <li class="{% if  request.resolver_match.url_name == 'user:add_user' %}active{% endif %}" ><a href="{% url 'user:add_user'%}" >AddUser</a></li>
+             <li class="{% if  request.resolver_match.url_name == 'user:show_user' %}active{% endif %}" ><a href="{% url 'user:show_user'%}" >Show User</a></li>
+             <li><a href="{% url 'blog:userblog'%}">your blog</a></li>
+             <li class="{% if  request.resolver_match.url_name == 'blog:add' %}active{% endif %}"><a href="{% url 'blog:add'%}">Create Your Blog</a></li>
+        {%else%}
+             <li class="{% if  request.resolver_match.url_name == 'user:logout' %}active{% endif %}" ><a href="{% url 'user:logout'%}" >Logout</a></li>
+        {%endif%}
+    </ul>
+
+</body>
+</html>

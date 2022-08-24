@@ -1,0 +1,21 @@
+<style>
+    form {
+        width: 500px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+        margin-left: 300px;
+    }
+</style>
+<form method="post" enctype="multipart/form-data">
+    <h2 style="color: darkslategray; text-align:center">Register Now</h2>
+    <br>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button style="background-color:green" type="submit">Register</button>
+    <br><br>
+    <a href="{% url 'user:login' %}">already have an account</a>
+    <br>
+
+
+</form>

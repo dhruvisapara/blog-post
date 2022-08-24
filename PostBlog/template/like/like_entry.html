@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>like entry</title>
+</head>
+<body>
+<p>
+    <textarea cols="2" name="log" rows="25"></textarea>
+     <input id="update_log_button" name="update_log" type="button" value="Update Log"/>
+</p>
+<script type="text/javascript">
+  $(function(){
+    $("#update_log_button").click(function(){
+        $.post(
+         url : "/hello/",
+         dataType:"html",
+         success: function(data, status, xhr){
+            //do something with your data
+        }
+        );
+        return false;
+    });
+ });
+</script>
+</body>
+</html>

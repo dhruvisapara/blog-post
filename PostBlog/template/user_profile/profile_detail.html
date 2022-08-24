@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>proile detail</title>
+
+</head>
+
+<body>
+<div class="card">
+
+    {%if user.profile_image%}
+
+      <img src="{{user.profile_image.url}}" alt="no profile picture associated">
+
+    {%endif%}
+
+      <h1 style="color:darkblue">{{user.username}}</h1>
+      <p class="title">{{user.profession}}</p>
+      <p>{{user.email}}</p>
+      <p>{{user.birthdate}}</p>
+      <p>{{user.address}}</p>
+      <p>{{user.mobile_number}}</p>
+
+      <div style="margin: 24px 0;">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+      </div>
+
+      <br><br>
+      <a href="{% url 'user:update' pk=user.id %}">Upgrade your Profile</a>
+      <br><br>
+      <a href="{% url 'blog:update' pk=user.id %}">Edit your blogs</a>
+      <br><br>
+      <a href="{% url 'user:change-password' %}">change password</a>
+
+</div>
+</body>
+</html>

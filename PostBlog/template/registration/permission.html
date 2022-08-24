@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>permission</title>
+</head>
+<body>
+<form method="post">
+    <h3>set permission</h3>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button style="background-color:green" type="submit">Register</button>
+    <br><br>
+    <br>
+</form>
+</body>
+</html>

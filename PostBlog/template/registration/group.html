@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>group</title>
+</head>
+<body>
+{%for name in group_listing%}
+<h3 style="color:darkblue">{{name.name}}</h3>
+<h3 style="color:skyblue">{{name.permissions}}</h3>
+    <a href="{%url 'user:delete_permission' pk=name.id%}"><button style="color:red;">Delete</button></a>
+    <a href="{%url 'user:update_permission' pk=name.id%}"><button style="color:green;">update</button></a>
+{%endfor%}
+
+</body>
+</html>

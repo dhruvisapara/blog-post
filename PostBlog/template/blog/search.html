@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+</head>
+<body>
+{% csrf_token %}
+<ul>
+    {%if object_list%}
+    {% for blog in object_list %}
+
+    <h2 style="color:darkblue">
+        {{ blog.title }}
+    </h2>
+    <h4 style="color:darkblue">Published by -{{blog.user.username}}</h4>
+    <h4 style="color:darkblue">{{blog.user.profession}}</h4>
+    <div style="margin-left:250px">
+        {% for post in blog.image.all %}
+        <img width="200" height="200" class="abc" src="{{post.post_image.url}}">
+        {% endfor %}
+    </div>
+    <br><br>
+    <p style="color:green">
+        {{ blog.description }}
+    </p>
+    {% endfor %}
+    {%else%}
+    <script>
+        alert("no result found.")
+    </script>
+    {%endif%}
+</ul>
+</body>
+</html>

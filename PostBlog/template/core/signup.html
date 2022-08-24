@@ -1,0 +1,27 @@
+{% extends 'base3.html' %}
+{% block javascript %}
+  <script>
+     $("#id_username").change(function () {
+      var form = $(this).closest("form");
+      $.ajax({
+        url: form.attr("data-validate-username-url"),
+        data: form.serialize(),
+        dataType: 'json',
+        success: function (data) {
+          if (data.is_taken){
+            alert(data.error_message);
+          }
+        }
+      });
+    });
+  </script>
+
+{% endblock %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+</form>
+{% endblock %}
