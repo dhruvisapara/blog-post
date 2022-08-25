@@ -3487,3 +3487,1733 @@ Traceback (most recent call last):
   File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/expressions.py", line 723, in __init__
     raise TypeError(
 TypeError: 'Lower' takes exactly 1 argument (2 given)
+[2022-08-25 05:08:33] WARNING|django.request|Not Found: /
+[2022-08-25 05:08:33] WARNING|django.request|Not Found: /favicon.ico
+[2022-08-25 05:08:38] WARNING|django.request|Not Found: /dadmin
+[2022-08-25 05:10:18] ERROR|django.request|Internal Server Error: /admin/blog/blog/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'show_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Blog has no field named 'show_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/library.py", line 260, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 280, in lookup_field
+    value = attr(obj)
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py", line 27, in show_comment
+    return result["body"]
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/query.py", line 330, in __getitem__
+    raise TypeError(
+TypeError: QuerySet indices must be integers or slices, not str.
+[2022-08-25 05:10:50] ERROR|django.request|Internal Server Error: /admin/blog/blog/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'show_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Blog has no field named 'show_comment'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/library.py", line 260, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 312, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 280, in lookup_field
+    value = attr(obj)
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py", line 26, in show_comment
+    result = Comment.objects.filter(blog=obj).body
+AttributeError: 'QuerySet' object has no attribute 'body'
+[2022-08-25 05:29:56] WARNING|django.request|Not Found: /
+[2022-08-25 05:32:08] WARNING|django.request|Not Found: /favicon.ico
+[2022-08-25 05:32:09] WARNING|django.request|Not Found: /favicon.ico
+[2022-08-25 05:43:28] ERROR|django.request|Internal Server Error: /admin/blog/blog/add/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1885, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1797, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1220, in save_model
+    obj.save()
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/models.py", line 31, in save
+    imag = Image.open(self.formset_image.path)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 60, in path
+    self._require_file()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'formset_image' attribute has no file associated with it.
+[2022-08-25 06:31:01] WARNING|django.request|Not Found: /
+[2022-08-25 06:32:07] WARNING|django.request|Not Found: /
+[2022-08-25 06:54:45] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'bootstrap_admin_template_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'bootstrap_admin_template_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+debugger_tags
+highlighting
+i18n
+indent_text
+l10n
+log
+rest_framework
+static
+syntax_color
+tz
+widont
+[2022-08-25 06:54:46] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'bootstrap_admin_template_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'bootstrap_admin_template_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+debugger_tags
+highlighting
+i18n
+indent_text
+l10n
+log
+rest_framework
+static
+syntax_color
+tz
+widont
+[2022-08-25 06:54:48] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'bootstrap_admin_template_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'bootstrap_admin_template_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+debugger_tags
+highlighting
+i18n
+indent_text
+l10n
+log
+rest_framework
+static
+syntax_color
+tz
+widont
+[2022-08-25 06:54:49] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'bootstrap_admin_template_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'bootstrap_admin_template_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+debugger_tags
+highlighting
+i18n
+indent_text
+l10n
+log
+rest_framework
+static
+syntax_color
+tz
+widont
+[2022-08-25 06:57:51] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 06:58:31] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 06:59:01] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 06:59:02] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 06:59:02] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 06:59:37] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 06:59:38] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 06:59:38] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 06:59:39] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 06:59:39] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 3: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 07:00:00] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'bootstrap_admin_template_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'bootstrap_admin_template_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+debugger_tags
+highlighting
+i18n
+indent_text
+l10n
+log
+rest_framework
+static
+syntax_color
+tz
+widont
+[2022-08-25 07:00:00] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'bootstrap_admin_template_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'bootstrap_admin_template_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+debugger_tags
+highlighting
+i18n
+indent_text
+l10n
+log
+rest_framework
+static
+syntax_color
+tz
+widont
+[2022-08-25 07:00:01] ERROR|django.request|Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'bootstrap_admin_template_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'bootstrap_admin_template_tags' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+debugger_tags
+highlighting
+i18n
+indent_text
+l10n
+log
+rest_framework
+static
+syntax_color
+tz
+widont
+[2022-08-25 07:19:23] WARNING|django.request|Not Found: /
+[2022-08-25 07:43:39] ERROR|django.request|Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 07:44:58] ERROR|django.request|Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 07:45:35] ERROR|django.request|Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 07:45:36] ERROR|django.request|Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 07:45:36] ERROR|django.request|Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'static', expected 'endblock'. Did you forget to register or load this tag?
+[2022-08-25 08:02:25] ERROR|django.request|Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1027, in find_library
+    return parser.libraries[name]
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1089, in load
+    lib = find_library(parser, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 1029, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'staticfiles' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+debugger_tags
+highlighting
+i18n
+indent_text
+l10n
+log
+rest_framework
+static
+syntax_color
+tz
+widont
+[2022-08-25 10:47:32] WARNING|django.request|Not Found: /favicon.ico
+[2022-08-25 12:19:19] WARNING|django.request|Not Found: /
+[2022-08-25 12:19:19] WARNING|django.request|Not Found: /favicon.ico
+[2022-08-25 12:33:31] WARNING|django.request|Not Found: /
+[2022-08-25 12:36:33] WARNING|django.request|Not Found: /
+[2022-08-25 12:37:56] ERROR|django.request|Internal Server Error: /blog/formset/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 875, in _resolve_lookup
+    current = current[bit]
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/formsets.py", line 111, in __getitem__
+    return self.forms[index]
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/formsets.py", line 184, in forms
+    for i in range(self.total_form_count())
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/formsets.py", line 159, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/models.py", line 690, in initial_form_count
+    return len(self.get_queryset())
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/models.py", line 751, in get_queryset
+    if not qs.ordered:
+AttributeError: 'function' object has no attribute 'ordered'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/formsets.py", line 139, in management_form
+    TOTAL_FORM_COUNT: self.total_form_count(),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/formsets.py", line 159, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/models.py", line 690, in initial_form_count
+    return len(self.get_queryset())
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/models.py", line 751, in get_queryset
+    if not qs.ordered:
+AttributeError: 'function' object has no attribute 'ordered'
+[2022-08-25 12:39:19] WARNING|django.request|Not Found: /favicon.ico
+[2022-08-25 13:39:35] ERROR|django.request|Internal Server Error: /admin/user/user/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 77, in __init__
+    self.root_queryset = model_admin.get_queryset(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 414, in get_queryset
+    qs = qs.order_by(*ordering)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/query.py", line 1295, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 2176, in add_ordering
+    raise FieldError("Invalid order_by arguments: %s" % errors)
+django.core.exceptions.FieldError: Invalid order_by arguments: [False]
+[2022-08-25 13:49:26] WARNING|django.request|Not Found: /favicon.ico

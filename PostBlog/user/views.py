@@ -1,6 +1,5 @@
 from tokenize import Token
 
-from channels.generic.websocket import AsyncJsonWebsocketConsumer
 from django.contrib.auth import login
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.models import Group

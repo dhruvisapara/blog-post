@@ -4,6 +4,12 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from user.models import User
 
+Rating = [
+    ('b', 'Bad'),
+    ('a', 'Average'),
+    ('e', 'Excellent')
+]
+
 
 class Blog(models.Model):
     """This model contains all information about blogs"""
@@ -21,11 +27,9 @@ class Blog(models.Model):
                                     choices=(
                                         (1, 'Active'), (0, 'Inactive')
                                     ))
-
+    rating = models.CharField(max_length=1, choices=Rating,null=True,blank=True)
     def __str__(self):
         return self.title
-
-
 
     def save(self, *args, **kwargs):
         super(Blog, self).save(*args, **kwargs)
