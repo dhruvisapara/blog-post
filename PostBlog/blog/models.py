@@ -27,9 +27,13 @@ class Blog(models.Model):
                                     choices=(
                                         (1, 'Active'), (0, 'Inactive')
                                     ))
-    rating = models.CharField(max_length=1, choices=Rating,null=True,blank=True)
+    rating = models.CharField(max_length=1, choices=Rating, null=True, blank=True)
+
     def __str__(self):
         return self.title
+
+    class Meta:
+        verbose_name_plural = "Blogs"
 
     def save(self, *args, **kwargs):
         super(Blog, self).save(*args, **kwargs)

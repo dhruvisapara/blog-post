@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'chat',
     'channels',
     'pizzeria',
+    'import_export',
 
 
 ]

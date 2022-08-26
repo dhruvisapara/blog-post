@@ -5217,3 +5217,1121 @@ Traceback (most recent call last):
     raise FieldError("Invalid order_by arguments: %s" % errors)
 django.core.exceptions.FieldError: Invalid order_by arguments: [False]
 [2022-08-25 13:49:26] WARNING|django.request|Not Found: /favicon.ico
+[2022-08-26 04:38:59] WARNING|django.request|Not Found: /
+[2022-08-26 04:39:00] WARNING|django.request|Not Found: /favicon.ico
+[2022-08-26 05:22:26] ERROR|django.request|Internal Server Error: /admin/inlineformset/ingredients/add/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (recipe__title) specified for Ingredients
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1885, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (recipe__title) specified for Ingredients. Check fields/fieldsets/exclude attributes of class IngredientsAdmin.
+[2022-08-26 05:28:06] ERROR|django.request|Internal Server Error: /admin/inlineformset/ingredients/add/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 804, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/models.py", line 648, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/forms/models.py", line 327, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (recipe__title) specified for Ingredients
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1885, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1781, in _changeform_view
+    ModelForm = self.get_form(
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py", line 806, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (recipe__title) specified for Ingredients. Check fields/fieldsets/exclude attributes of class IngredientsAdmin.
+[2022-08-26 10:05:03] WARNING|django.request|Not Found: /media/static/blog_logo2.png
+[2022-08-26 10:05:18] WARNING|django.request|Not Found: /media/blog_logo2.png
+[2022-08-26 10:13:23] WARNING|django.request|Not Found: /
+[2022-08-26 11:46:03] WARNING|django.request|Not Found: /
+[2022-08-26 11:56:08] ERROR|django.request|Internal Server Error: /blog/detail/65/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'userlike'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/defaulttags.py", line 472, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'userlike' is not a registered namespace
+[2022-08-26 12:32:21] WARNING|django.request|Not Found: /ajax/crud/
+[2022-08-26 12:32:36] WARNING|django.request|Not Found: /ajax/crud/create/
+[2022-08-26 12:42:08] ERROR|django.request|Internal Server Error: /admin/blog/blog/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'custom_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Blog has no field named 'custom_field'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/library.py", line 260, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 309, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 280, in lookup_field
+    value = attr(obj)
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py", line 56, in custom_field
+    return format_html('<a href={}>URL</a>', obj.url)
+AttributeError: 'Blog' object has no attribute 'url'
+[2022-08-26 13:23:54] ERROR|django.request|Internal Server Error: /admin/blog/blog/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Blog has no field named 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/library.py", line 260, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 309, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 280, in lookup_field
+    value = attr(obj)
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py", line 71, in user_profile
+    return format_html("<a  href=href='{% url '{% url 'user:profile' %}' %}'>Profile</a>")
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/html.py", line 114, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+ValueError: unexpected '{' in field name
+[2022-08-26 13:24:14] ERROR|django.request|Internal Server Error: /admin/blog/blog/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Blog has no field named 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/library.py", line 260, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 309, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 280, in lookup_field
+    value = attr(obj)
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py", line 72, in user_profile
+    return format_html("<a  href=href='{% url '{% url 'user:profile' %}' %}'>Profile</a>", profile)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/html.py", line 114, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+ValueError: unexpected '{' in field name
+[2022-08-26 13:24:40] ERROR|django.request|Internal Server Error: /admin/blog/blog/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Blog has no field named 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/library.py", line 260, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 309, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 280, in lookup_field
+    value = attr(obj)
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py", line 72, in user_profile
+    return format_html("<a  href=href='{% url '{% url 'user:profile' %}'>Profile</a>", profile)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/html.py", line 114, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+ValueError: unexpected '{' in field name
+[2022-08-26 13:25:01] ERROR|django.request|Internal Server Error: /admin/blog/blog/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Blog has no field named 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/library.py", line 260, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 309, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 280, in lookup_field
+    value = attr(obj)
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py", line 72, in user_profile
+    return format_html("<a  href=href='{% url 'user:profile' %}'>Profile</a>", profile)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/html.py", line 114, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+KeyError: "% url 'user"
+[2022-08-26 13:25:17] ERROR|django.request|Internal Server Error: /admin/blog/blog/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Blog has no field named 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/library.py", line 260, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 309, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 280, in lookup_field
+    value = attr(obj)
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py", line 72, in user_profile
+    return format_html("<a  href='{% url 'user:profile' %}'>Profile</a>", profile)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/utils/html.py", line 114, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+KeyError: "% url 'user"
+[2022-08-26 13:28:18] ERROR|django.request|Internal Server Error: /admin/blog/blog/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Blog has no field named 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/library.py", line 260, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 309, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 280, in lookup_field
+    value = attr(obj)
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py", line 72, in user_profile
+    if obj.filepath:
+AttributeError: 'Blog' object has no attribute 'filepath'
+[2022-08-26 13:30:04] ERROR|django.request|Internal Server Error: /admin/blog/blog/
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 672, in get_field
+    return self.fields_map[field_name]
+KeyError: 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 271, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 302, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/db/models/options.py", line 674, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Blog has no field named 'user_profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/template/library.py", line 260, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 336, in result_list
+    "results": list(results(cl)),
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 309, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 303, in __init__
+    super().__init__(*items)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/templatetags/admin_list.py", line 213, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/utils.py", line 280, in lookup_field
+    value = attr(obj)
+  File "/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py", line 72, in user_profile
+    if obj.filepath:
+AttributeError: 'Blog' object has no attribute 'filepath'
+[2022-08-26 13:39:20] WARNING|django.request|Not Found: /
+[2022-08-26 13:44:03] WARNING|django.request|Not Found: /

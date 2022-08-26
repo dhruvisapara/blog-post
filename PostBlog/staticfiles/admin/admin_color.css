@@ -1,17 +1,19 @@
-#branding h1, #branding h1 a: link, #branding h1 a: visited {
+#branding h1,
+#branding h1 a: link,
+#branding h1 a: visited {
     color:#2F65CB ;
 }
 #branding h1 {
     font - size: x - large;
 }
 h1 {
-    color: white;
+    color: #9AB4E7 ;
 }
 body {
     background: black;
 }
 #header {
-    background: crimson;color: #fff;height: 78 px
+    background: #2F65CB ;color: #fff;height: 78 px
 }
 #header a: link, #header a: visited {
     color: #fff;
@@ -21,7 +23,7 @@ body {
 }
 div.breadcrumbs {
     /* color: #c4dce8; */
-    background: firebrick;
+    background: #9AB4E7  ;
 }
 div.breadcrumbs a.active {
     color: #c4dce8;!important;font - weight: 300;
@@ -32,7 +34,7 @@ div.breadcrumbs a: focus, div.breadcrumbs a: hover {
     background - color: #292D32;}.paginator a:link, .paginator a:visited {background: # 292 D32;
 }.button, input[type = submit], input[type = button], .submit - row input, a.button {
     background: #78afc8;}.button:hover, input[type= submit]: hover, input[type = button]: hover {
-    background: #878787;}.module caption{background: crimson;}.module p{background: crimson;}.module h2, .inline-group h2 {background: # 78 afc8;
+    background: #878787;}.module caption{background: #2F65CB ;}.module p{background: #2F65CB ;}.module h2, .inline-group h2 {background: # 78 afc8;
 }
 #user - tools a: focus, #user - tools a: hover {
         border: 0;color: #ddd;

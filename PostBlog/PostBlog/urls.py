@@ -22,11 +22,18 @@ from django.urls import re_path as url
 from rest_framework.authtoken import views
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
+from contact.admin import contact_admin_site
+
+admin.site.site_header = 'Blog-Post admin'
+admin.site.site_title = 'Blog-Post admin'
+admin.site.index_title = 'Blog administration'
+admin.site.site_url = 'http://127.0.0.1:8000/blog/'
 urlpatterns = [
 
     ################ admin path ########################
 
     path('admin/', admin.site.urls),
+    path('contact-admin/', contact_admin_site.urls),
 
     ################ restframwork path #################
 
@@ -53,10 +60,11 @@ urlpatterns = [
     ################## ajaxuser path ########################
     path("", include('ajaxuser.urls')),
     path("", include('post.urls')),
-    path('',include('contact.urls')),
-    path('book/',include('book.urls')),
-    path('inline/',include('inlineformset.urls')),
-    path('game/',include('game.urls')),
-    path('chat/',include('chat.urls')),
+    path('', include('contact.urls')),
+    path('book/', include('book.urls')),
+    path('inline/', include('inlineformset.urls')),
+    path('game/', include('game.urls')),
+    path('chat/', include('chat.urls')),
 
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
