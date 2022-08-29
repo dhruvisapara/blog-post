@@ -21,7 +21,7 @@ from django.urls import include, path
 from django.urls import re_path as url
 from rest_framework.authtoken import views
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-
+from django.contrib.auth import views as auth_views
 from contact.admin import contact_admin_site
 
 admin.site.site_header = 'Blog-Post admin'
@@ -35,7 +35,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact-admin/', contact_admin_site.urls),
 
+    ################ Social auth path #################
+    url(r'^oauth/', include('social_django.urls', namespace='social')),
+
     ################ restframwork path #################
+
 
     # path('api-auth/', include('rest_framework.urls')),
     # path('api-token-auth', views.obtain_auth_token),

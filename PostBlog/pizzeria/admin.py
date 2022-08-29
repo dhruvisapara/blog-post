@@ -12,7 +12,7 @@ class ToppingAdmin(admin.ModelAdmin):
 
 @admin.register(Pizza)
 class PizzaAdmin(admin.ModelAdmin):
-    list_display = ('name','is_soldout')
+    list_display = ('name', 'is_soldout')
 
     def get_urls(self):
         urls = super().get_urls()

@@ -5,7 +5,7 @@ from book.models import Book, TextBook, Author
 admin.site.register(Book)
 
 
-class TextBookAdminInline(admin.StackedInline):
+class TextBookAdminInline(admin.TabularInline):
     extra = 2
     model = TextBook
 

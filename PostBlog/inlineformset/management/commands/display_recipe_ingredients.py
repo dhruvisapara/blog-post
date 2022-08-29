@@ -14,7 +14,12 @@ class Command(BaseCommand):
         recipes_ingredient = kwargs['recipe_title']
         recipes_dis = kwargs['show_description']
         if not recipes_dis:
+            """
+            To displayed recipe ingredients,
+            python manage.py display_recipe_ingredients --recipe_title khichadi
+            """
             for recipe_title in recipes_ingredient:
+
                 ingredients = Ingredients.objects.filter(recipe__title=recipe_title)
                 if ingredients.exists():
                     list_of_ingredients = list((ingredients.values_list('name', flat=True)))
@@ -28,6 +33,10 @@ class Command(BaseCommand):
                     self.stdout.write(self.style.WARNING('%s sorry there is no recipe  available.' % recipe_title))
 
         elif recipes_dis:
+            """
+            To displayed recipe methods,
+            python manage.py display_recipe_ingredients --recipe_title khichadi  --show_description true
+            """
             description = Recipe.objects.get(title=recipes_ingredient[0]).description
             self.stdout.write(
                 self.style.SUCCESS('method to make delicious %s is\n%s' % (recipes_ingredient[0], description)))

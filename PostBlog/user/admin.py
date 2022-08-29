@@ -12,8 +12,8 @@ admin.site.register(Permission)
 
 
 @admin.register(User)
-class BlogAdmin(admin.ModelAdmin):
-    list_display = ('username', 'Gender', 'user_type')
+class UserAdmin(admin.ModelAdmin):
+    list_display = ('username', 'user_type', 'blog_display')
     list_filter = ("username",)
     editable_list = ['mobile_number']
     search_fields = ("username__startswith",)
@@ -22,7 +22,6 @@ class BlogAdmin(admin.ModelAdmin):
     def get_ordering(self, request):
         return [Upper('user_type')]
 
-
     def dp_image(self, obj):
         return mark_safe('<img src="{url}" width="{width}" height={height} />'.format(
             url=obj.profile_image.url,
@@ -30,3 +29,10 @@ class BlogAdmin(admin.ModelAdmin):
             height=obj.profile_image.height,
         )
         )
+
+    def blog_display(self, obj):
+        return ", ".join([
+            child.title for child in obj.blog.all()
+        ])
+
+    blog_display.short_description = "User's Blogs"

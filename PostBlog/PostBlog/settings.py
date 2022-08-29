@@ -63,7 +63,7 @@ INSTALLED_APPS = [
     'channels',
     'pizzeria',
     'import_export',
-
+    'social_django',
 
 ]
 REST_FRAMEWORK = {
@@ -141,6 +141,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -187,7 +189,11 @@ SIMPLE_JWT = {
 # WSGI_APPLICATION = 'PostBlog.wsgi.application'
 ASGI_APPLICATION = "blog.routing.application"
 AUTHENTICATION_BACKENDS = [
-    'user.backends.EmailPhoneUsernameAuthenticationBackend'
+    'user.backends.EmailPhoneUsernameAuthenticationBackend',
+    'social_core.backends.github.GithubOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
+
+    'django.contrib.auth.backends.ModelBackend',
 ]
 CHANNEL_LAYERS = {
     'default': {
@@ -306,3 +312,9 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'dhruvi.sapara@trootech.com'
 EMAIL_HOST_PASSWORD = '0K*^v#12@8'
+SOCIAL_AUTH_GITHUB_KEY = 'pk_test_51LE9ZESCeFbdDABQwxwr3zg9DCfoxnFd9iE0D4CWoVszC6CycNMWkUmfWtVgaWeBRO0cQiWml2k33aQlJXnLjZsD00maAslAml'
+SOCIAL_AUTH_GITHUB_SECRET = 'sk_test_51LE9ZESCeFbdDABQ3olyTyP7elkIVCNZJJHjy9YPwR3SRlxddCjD8ENbK3ndjKAsGhOOz1IdqlatFoj9gLkZpjR000m3oy61ZT'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'YOUR GOOGLE KEY'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'YOUR GOOGLE SECRET KEY'
+
+SOCIAL_AUTH_URL_NAMESPACE = 'social'

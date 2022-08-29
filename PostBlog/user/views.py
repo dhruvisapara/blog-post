@@ -6,7 +6,7 @@ from django.contrib.auth.models import Group
 from django.contrib.auth.views import PasswordResetConfirmView
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, UpdateView, DeleteView, ListView
+from django.views.generic import CreateView, UpdateView, DeleteView, ListView, TemplateView
 from rest_framework import status
 from rest_framework.generics import CreateAPIView
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
@@ -46,6 +46,7 @@ class UserRegistration(CreateAPIView):
 class ProfileView(CreateView):
     """This view should display profile view according to user."""
     form_class = SignUpForm
+
     template_name = "registration/profile.html"
 
 

@@ -1,8 +1,7 @@
 from django import forms
 from django.contrib import admin
 from django.db.models.functions import Lower
-from django.http import HttpResponseRedirect
-from django.urls import path, reverse
+from django.urls import reverse
 from django.utils.html import format_html
 from import_export.admin import ImportExportModelAdmin
 
@@ -49,14 +48,14 @@ class BlogAdmin(ImportExportModelAdmin):
         "active",
         "pub_date",
         "user",
-        "all_orders_of_this_customer",
+        "profile_according_to_user",
         "is_user_is_staff",
         "rating",
+        'Comment_according_to_blog'
 
     )
-    list_filter = ("pub_date",)
+    list_filter = ("pub_date", "user")
     exclude = ("user",)
-    list_per_page = 10
     date_hierarchy = "pub_date"
 
     list_editable = ("rating",)
@@ -67,13 +66,19 @@ class BlogAdmin(ImportExportModelAdmin):
         change_rating_to_Average,
     ]
 
-    def all_orders_of_this_customer(self, obj):
+    def profile_according_to_user(self, obj):
         return format_html(
-            '<a class="button"  href="{0}?customer={1}">Profile</a>&nbsp;',
-            reverse('user:profile'), obj.user.pk
+            '<a class="button"  href="/admin/user/user/{}/change/">Profile</a>&nbsp;'.format(obj.user.pk)
         )
 
-    all_orders_of_this_customer.short_description = 'Customer Profile'
+    profile_according_to_user.short_description = 'Customer Profile'
+
+    def Comment_according_to_blog(self, obj):
+        return format_html(
+            '<a class="button"  href="/blog/{}/">Comment</a>&nbsp;'.format(obj.id)
+        )
+
+    Comment_according_to_blog.short_description = 'Blog Comments'
 
     def active(self, obj):
         return obj.is_active == 1
@@ -97,7 +102,10 @@ class BlogAdmin(ImportExportModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(ImportExportModelAdmin):
-    pass
+    list_filter = ["blog"]
+
+    def has_add_permission(self, request):
+        return False
 
 
 @admin.register(Image)
