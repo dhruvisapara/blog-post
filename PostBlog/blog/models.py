@@ -19,7 +19,7 @@ class Blog(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog')
     highlights = models.CharField(max_length=500, default=None)
     formset_image = models.ImageField(upload_to='images', null=True, blank=True)
-    slug = models.SlugField(null=False, unique=True)
+    slug = models.SlugField(null=True)
     is_active = models.IntegerField(default=1,
                                     blank=True,
                                     null=True,

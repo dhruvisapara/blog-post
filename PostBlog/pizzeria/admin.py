@@ -29,5 +29,5 @@ class PizzaAdmin(admin.ModelAdmin):
 
     def set_not_soldout(self, request):
         self.model.objects.all().update(is_soldout=False)
-        self.message_user(request, "All pizzas are available")
+        self.message_user(request, "Pizzas are available")
         return HttpResponseRedirect("../")

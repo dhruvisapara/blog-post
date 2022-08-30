@@ -15,6 +15,7 @@ class BlogForm(ModelForm):
             'description',
             'highlights',
             'formset_image',
+
         ]
 
         def save(self, commit=True):
@@ -135,3 +136,18 @@ class BlogImageForm(ModelForm):
         if img.size > 2621440:  # 2.5 Mb
             raise ValidationError("Your image size is too big,try to upload image that's size is less then.")
         return img
+
+
+class BlogInlineForm(ModelForm):
+    class Meta:
+        model = Blog
+        fields = ['title']
+
+
+class ImageInlineForm(ModelForm):
+    class Meta:
+        model = Image
+        fields = "__all__"
+
+
+ImagetInlineFormset = inlineformset_factory(Blog, Image, form=ImageInlineForm, extra=3, can_delete=True)

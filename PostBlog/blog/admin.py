@@ -44,6 +44,7 @@ class BlogAdminForm(forms.ModelForm):
 class BlogAdmin(ImportExportModelAdmin):
     form = BlogAdminForm
     list_display = (
+        "image_tag",
         "title",
         "active",
         "pub_date",
@@ -51,11 +52,12 @@ class BlogAdmin(ImportExportModelAdmin):
         "profile_according_to_user",
         "is_user_is_staff",
         "rating",
+        "slug",
         'Comment_according_to_blog'
 
     )
     list_filter = ("pub_date", "user")
-    exclude = ("user",)
+    exclude = ("user", "slug")
     date_hierarchy = "pub_date"
 
     list_editable = ("rating",)
@@ -65,6 +67,7 @@ class BlogAdmin(ImportExportModelAdmin):
         change_rating_to_Bad,
         change_rating_to_Average,
     ]
+    Blog.admin_order_field = 'formset_image'
 
     def profile_according_to_user(self, obj):
         return format_html(
@@ -92,12 +95,18 @@ class BlogAdmin(ImportExportModelAdmin):
         obj = super().save_form(request, form, change)
         if not change:
             obj.user = request.user
+            obj.slug = obj.title
         return obj
 
     def is_user_is_staff(self, obj):
         return obj.user.user_type == "staff"
 
     is_user_is_staff.boolean = True
+
+    def image_tag(self, obj):
+        if obj.formset_image:
+            return format_html('<img src="{}" style="width: 45px; height:45px;" />'.format(obj.formset_image.url))
+        return None
 
 
 @admin.register(Comment)
