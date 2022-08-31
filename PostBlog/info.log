@@ -2462,3 +2462,193 @@
 [2022-08-30 14:02:20] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/user/admin.py changed, reloading.
 [2022-08-30 14:02:21] INFO|django.utils.autoreload|Watching for file changes with StatReloader
 [2022-08-30 14:02:37] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 03:52:38] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 03:55:51] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/user/admin.py changed, reloading.
+[2022-08-31 03:55:53] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 03:56:36] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/user/admin.py changed, reloading.
+[2022-08-31 03:56:37] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 03:58:08] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 03:58:09] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 03:58:13] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 03:58:15] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 04:23:24] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/PostBlog/settings.py changed, reloading.
+[2022-08-31 04:23:26] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 04:23:29] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/PostBlog/settings.py changed, reloading.
+[2022-08-31 04:23:30] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 04:28:50] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/PostBlog/settings.py changed, reloading.
+[2022-08-31 04:28:52] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 04:29:09] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/PostBlog/settings.py changed, reloading.
+[2022-08-31 04:29:10] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 04:29:26] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/PostBlog/settings.py changed, reloading.
+[2022-08-31 04:29:27] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 04:33:26] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/PostBlog/settings.py changed, reloading.
+[2022-08-31 04:33:28] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 04:33:38] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/PostBlog/settings.py changed, reloading.
+[2022-08-31 04:33:39] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:04:20] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:04:23] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:04:53] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:04:55] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:19:20] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:19:21] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:19:44] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:19:45] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:19:49] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:19:51] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:35:12] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:35:13] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:35:29] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:35:30] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:35:32] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:35:33] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:36:13] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:36:15] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:36:42] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:36:43] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:36:46] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 05:36:47] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:54:31] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/PostBlog/settings.py changed, reloading.
+[2022-08-31 05:54:34] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 05:55:00] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/PostBlog/settings.py changed, reloading.
+[2022-08-31 05:55:02] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 06:01:42] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 06:01:43] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 06:03:07] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 06:03:09] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 06:16:21] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/book/admin.py changed, reloading.
+[2022-08-31 06:16:23] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 07:01:42] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/models.py changed, reloading.
+[2022-08-31 07:01:44] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 07:03:10] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 07:03:11] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 07:03:30] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 07:03:31] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 07:04:29] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 07:04:31] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 07:05:13] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 07:05:15] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 07:05:51] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/models.py changed, reloading.
+[2022-08-31 07:05:53] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 07:06:35] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 07:06:36] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 07:07:03] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 07:07:04] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 07:07:13] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 07:07:15] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:26:01] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:26:03] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:27:22] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:27:24] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:29:06] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:29:08] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:44:54] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:44:55] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:55:45] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:55:47] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:56:03] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:56:05] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:56:45] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:56:46] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:57:02] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:57:03] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:57:05] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:57:06] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:57:57] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:57:58] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:58:28] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:58:29] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 08:58:35] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 08:58:37] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:00:21] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 09:00:22] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:00:25] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/contact/admin.py changed, reloading.
+[2022-08-31 09:00:26] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:07:56] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:07:58] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:25:50] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:25:52] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:47:30] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:47:32] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:48:00] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:48:01] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:48:22] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:48:24] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:48:44] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:48:46] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:49:26] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:49:27] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:51:09] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:51:10] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:51:55] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:51:57] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:52:17] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:52:19] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:54:52] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:54:54] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:54:59] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:55:00] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:55:11] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:55:13] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 09:55:44] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 09:55:45] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 10:06:33] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 10:06:35] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 10:07:48] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 10:07:49] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 10:07:56] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 10:07:57] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 10:09:25] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 10:09:27] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:01:32] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py changed, reloading.
+[2022-08-31 11:01:33] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:01:38] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/myvenv/lib/python3.8/site-packages/django/contrib/admin/options.py changed, reloading.
+[2022-08-31 11:01:40] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:28:14] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/inlineformset/admin.py changed, reloading.
+[2022-08-31 11:28:16] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:40:06] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/book/admin.py changed, reloading.
+[2022-08-31 11:40:07] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:40:10] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/book/admin.py changed, reloading.
+[2022-08-31 11:40:11] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:51:10] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:51:13] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:51:34] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:51:36] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:52:03] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:52:04] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:52:32] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:52:33] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:52:40] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:52:41] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:52:54] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:52:55] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:53:40] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:53:41] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:54:15] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:54:17] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:54:49] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:54:51] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:55:09] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:55:10] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:55:29] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:55:30] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:55:58] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:55:59] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:56:16] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:56:17] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:57:10] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:57:12] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:57:49] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:57:50] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 11:57:56] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/blog/admin.py changed, reloading.
+[2022-08-31 11:57:58] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 12:55:39] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 13:50:55] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/ajaxuser/views.py changed, reloading.
+[2022-08-31 13:50:57] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 13:51:50] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/ajaxuser/views.py changed, reloading.
+[2022-08-31 13:51:51] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 13:57:24] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/ajaxuser/views.py changed, reloading.
+[2022-08-31 13:57:25] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 14:00:31] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/ajaxuser/views.py changed, reloading.
+[2022-08-31 14:00:32] INFO|django.utils.autoreload|Watching for file changes with StatReloader
+[2022-08-31 14:00:34] INFO|django.utils.autoreload|/home/akashdeep/practiceprojects/blog_project/blog-post/PostBlog/ajaxuser/views.py changed, reloading.
+[2022-08-31 14:00:36] INFO|django.utils.autoreload|Watching for file changes with StatReloader

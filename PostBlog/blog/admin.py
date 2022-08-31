@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib import admin
+from django.contrib import messages
 from django.db.models.functions import Lower
-from django.urls import reverse
 from django.utils.html import format_html
 from import_export.admin import ImportExportModelAdmin
 
@@ -10,19 +10,22 @@ from blog.models import Blog, Comment, Image
 
 def change_rating_to_Excellent(modeladmin, request, queryset):
     queryset.update(rating="e")
+    messages.success(request, "Selected Blogs Marked as Excellent Successfully !!")
 
 
 def change_rating_to_Bad(modeladmin, request, queryset):
     queryset.update(rating="b")
+    messages.success(request, "Selected Blogs Marked as Bad Successfully !!")
 
 
 def change_rating_to_Average(modeladmin, request, queryset):
     queryset.update(rating="a")
+    messages.success(request, "Selected Blogs Marked as Average Successfully !!")
 
 
-change_rating_to_Excellent.short_description = "Mark Selected Products as Excellent."
-change_rating_to_Bad.short_description = "Mark Selected Products as Bad."
-change_rating_to_Average.short_description = "Mark Selected Products as Average."
+change_rating_to_Excellent.short_description = "Mark Selected Blogs as Excellent."
+change_rating_to_Bad.short_description = "Mark Selected Blogs as Bad."
+change_rating_to_Average.short_description = "Mark Selected Blogs as Average."
 
 
 class BlogAdminForm(forms.ModelForm):
@@ -36,7 +39,6 @@ class BlogAdminForm(forms.ModelForm):
             raise forms.ValidationError(
                 f"{name} is already exist ,please change your blog title."
             )
-
         return self.cleaned_data["title"]
 
 
@@ -52,36 +54,37 @@ class BlogAdmin(ImportExportModelAdmin):
         "profile_according_to_user",
         "is_user_is_staff",
         "rating",
-        "slug",
-        'Comment_according_to_blog'
-
+        "Comment_according_to_blog",
     )
     list_filter = ("pub_date", "user")
+    list_display_links = ("title",)
     exclude = ("user", "slug")
     date_hierarchy = "pub_date"
 
     list_editable = ("rating",)
-    search_fields = ("title__startswith",)
+    search_fields = ("title__startswith", "user__username")
     actions = [
         change_rating_to_Excellent,
         change_rating_to_Bad,
         change_rating_to_Average,
     ]
-    Blog.admin_order_field = 'formset_image'
+    Blog.admin_order_field = "formset_image"
 
     def profile_according_to_user(self, obj):
         return format_html(
-            '<a class="button"  href="/admin/user/user/{}/change/">Profile</a>&nbsp;'.format(obj.user.pk)
+            '<a class="button"  href="/admin/user/user/{}/change/">Profile</a>&nbsp;'.format(
+                obj.user.pk
+            )
         )
 
-    profile_according_to_user.short_description = 'Customer Profile'
+    profile_according_to_user.short_description = "Customer Profile"
 
     def Comment_according_to_blog(self, obj):
         return format_html(
             '<a class="button"  href="/blog/{}/">Comment</a>&nbsp;'.format(obj.id)
         )
 
-    Comment_according_to_blog.short_description = 'Blog Comments'
+    Comment_according_to_blog.short_description = "Blog Comments"
 
     def active(self, obj):
         return obj.is_active == 1
@@ -105,7 +108,11 @@ class BlogAdmin(ImportExportModelAdmin):
 
     def image_tag(self, obj):
         if obj.formset_image:
-            return format_html('<img src="{}" style="width: 45px; height:45px;" />'.format(obj.formset_image.url))
+            return format_html(
+                '<img src="{}" style="width: 45px; height:45px;" />'.format(
+                    obj.formset_image.url
+                )
+            )
         return None
 
 

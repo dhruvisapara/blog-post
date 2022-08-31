@@ -9,3 +9,13 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class DataSet(models.Model):
+    purpose = models.TextField()
+
+
+class Measurement(models.Model):
+    value = models.IntegerField()
+    sets = models.ManyToManyField(DataSet,
+                                  verbose_name="datasets this measurement appears in")

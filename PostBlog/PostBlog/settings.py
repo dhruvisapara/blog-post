@@ -124,6 +124,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
     # 'corsheaders.middleware.CorsMiddleware',
 ]
 
@@ -312,8 +313,8 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'dhruvi.sapara@trootech.com'
 EMAIL_HOST_PASSWORD = '0K*^v#12@8'
-SOCIAL_AUTH_GITHUB_KEY = 'pk_test_51LE9ZESCeFbdDABQwxwr3zg9DCfoxnFd9iE0D4CWoVszC6CycNMWkUmfWtVgaWeBRO0cQiWml2k33aQlJXnLjZsD00maAslAml'
-SOCIAL_AUTH_GITHUB_SECRET = 'sk_test_51LE9ZESCeFbdDABQ3olyTyP7elkIVCNZJJHjy9YPwR3SRlxddCjD8ENbK3ndjKAsGhOOz1IdqlatFoj9gLkZpjR000m3oy61ZT'
+SOCIAL_AUTH_GITHUB_KEY = '26fab6a633cc1c91cc3a'
+SOCIAL_AUTH_GITHUB_SECRET = '9dc1e643c35636bd3a030afeec5cede07370493c'
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'YOUR GOOGLE KEY'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'YOUR GOOGLE SECRET KEY'
 
