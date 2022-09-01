@@ -13,6 +13,7 @@
     <h1>Welcome back manager {{user.username}}</h1>
     <p>only staff members can edit the information</p>
 
+
 {% elif user.user_type == 'staff'%}
 
     {% block home %}{% include 'index.html' %}{% endblock %}

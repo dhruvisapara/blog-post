@@ -1,24 +1,35 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% load socialaccount %}
+
 <html>
 <head>
     <title>login</title>
 </head>
+{% block content %}
 <body>
 
 
-    <form style="text-align:center" method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button style="color: darkslategray" type="submit">login</button>
-        <br><br>
-        <a href="{% url 'user:signup'%}">Register</a>
-        <br>
-        <a href="{% url 'user:password_reset' %}">Forgot Password</a>
-        <br><br>
-        <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a><br>
+<form style="text-align:center" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button style="color: darkslategray" type="submit">login</button>
+    <br><br>
+    <a href="{% url 'user:signup'%}">Register</a>
+    <br>
+    <a href="{% url 'user:password_reset' %}">Forgot Password</a>
+    <br><br>
+     {% if user.is_authenticated %}
+    <p>Welcome, {{ user.username }} !</p>
+    {% else %}
+    <a href="/accounts/google/login">Login with Google</a>
 
-
-    </form>
+    {% endif %}
+    <br><br>
+    <a href="{% provider_login_url 'linkedin' %}">Login with linkedin</a>
+</form>
 
 </body>
+{% endblock content %}
+
 </html>

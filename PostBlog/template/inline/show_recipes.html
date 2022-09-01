@@ -8,15 +8,7 @@
 
    <table >
        {% for recipes in recipe_list %}
-  <tr>
-    <td style="color:darkblue;font-size:25px;">{{recipes.title}}</td>
-      <tr>
-      <td style="color:darkblue;">{{recipes.description}}</td>
-        </tr>
-       <tr>
-      <td style="color:darkblue">{{recipes.name}}</td>
-       </tr>
-  </tr>
+       <h2><a href="{% url 'inline:recipe-update' recipes.pk %}">{{recipes.title}}</a></h2>
 {% endfor %}
 </table>
 </body>

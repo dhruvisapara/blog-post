@@ -1,8 +1,9 @@
 from itertools import chain
 
+from django.http import HttpResponseRedirect
 from django.shortcuts import redirect
-from django.urls import reverse
-from django.views.generic import CreateView, ListView
+from django.urls import reverse, reverse_lazy
+from django.views.generic import CreateView, ListView, UpdateView
 
 from inlineformset.forms import IngredientInlineFormset, RecipeForm
 from inlineformset.models import Ingredients, Recipe
@@ -60,3 +61,30 @@ class ShowRecipe(ListView):
     #
     #     result = list(chain(qs1, qs2))
     #     return result
+
+
+class RecipeUpdateView(UpdateView):
+    model = Recipe
+    success_url = reverse_lazy('blog:home')
+    fields = '__all__'
+    template_name = "inline/recipe_form.html"
+
+    def get_context_data(self, **kwargs):
+        context = super(RecipeUpdateView, self).get_context_data(**kwargs)
+        if self.request.POST:
+            context['inline_formset'] = IngredientInlineFormset(self.request.POST, instance=self.object)
+            context['inline_formset'].full_clean()
+        else:
+            context['inline_formset'] = IngredientInlineFormset(instance=self.object)
+        return context
+
+    def form_valid(self, form):
+        context = self.get_context_data(form=form)
+        formset = context['inline_formset']
+        if formset.is_valid():
+            response = super().form_valid(form)
+            formset.instance = self.object
+            formset.save()
+            return response
+        else:
+            return super().form_invalid(form)

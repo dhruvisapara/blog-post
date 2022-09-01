@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'django.contrib.sites',
     'blog',
     'user',
     'like',
@@ -63,7 +64,11 @@ INSTALLED_APPS = [
     'channels',
     'pizzeria',
     'import_export',
-    'social_django',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.linkedin',
+    'allauth.socialaccount.providers.google',
 
 ]
 REST_FRAMEWORK = {
@@ -78,7 +83,6 @@ REST_FRAMEWORK = {
 
     ),
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend',
-
                                 ],
 
     'DEFAULT_AUTHENTICATION_CLASSES': [
@@ -124,7 +128,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'social_django.middleware.SocialAuthExceptionMiddleware',
+
     # 'corsheaders.middleware.CorsMiddleware',
 ]
 
@@ -142,8 +146,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'social_django.context_processors.backends',
-                'social_django.context_processors.login_redirect',
+
             ],
         },
     },
@@ -189,13 +192,7 @@ SIMPLE_JWT = {
 }
 # WSGI_APPLICATION = 'PostBlog.wsgi.application'
 ASGI_APPLICATION = "blog.routing.application"
-AUTHENTICATION_BACKENDS = [
-    'user.backends.EmailPhoneUsernameAuthenticationBackend',
-    'social_core.backends.github.GithubOAuth2',
-    'social_core.backends.google.GoogleOAuth2',
 
-    'django.contrib.auth.backends.ModelBackend',
-]
 CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
@@ -305,7 +302,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = reverse_lazy('user:login')
-LOGIN_REDIRECT_URL = reverse_lazy('blog:home')
+LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000'
 LOGOUT_REDIRECT_URL = reverse_lazy('user:login')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -313,9 +310,44 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'dhruvi.sapara@trootech.com'
 EMAIL_HOST_PASSWORD = '0K*^v#12@8'
-SOCIAL_AUTH_GITHUB_KEY = '26fab6a633cc1c91cc3a'
-SOCIAL_AUTH_GITHUB_SECRET = '9dc1e643c35636bd3a030afeec5cede07370493c'
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = 'YOUR GOOGLE KEY'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'YOUR GOOGLE SECRET KEY'
+SITE_ID = 3
+SOCIALACCOUNT_QUERY_EMAIL = True
+SOCIALACCOUNT_LOGIN_ON_GET=True
+ACCOUNT_LOGOUT_REDIRECT_URL = '/'
+ACCOUNT_LOGIN_REDIRECT_URL = '/'
+ACCOUNT_SIGNUP_REDIRECT_URL = '/'
+ACCOUNT_LOGOUT_ON_GET = True
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_EMAIL_REQUIRED = True
 
-SOCIAL_AUTH_URL_NAMESPACE = 'social'
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+# Provider specific settings
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        }
+    },
+    'linkedin': {
+        'SCOPE': [
+            'r_basicprofile',
+            'r_emailaddress'
+        ],
+        'PROFILE_FIELDS': [
+            'id',
+            'first-name',
+            'last-name',
+            'email-address',
+            'picture-url',
+            'public-profile-url',
+        ]
+    }
+}

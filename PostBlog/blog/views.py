@@ -22,7 +22,7 @@ class BlogView(LoginRequiredMixin, ListView):
 
     def get_queryset(self):
         """one queryset display all the blogs
-            also filter by search query
+            also filter by search query.
         """
         query = self.request.GET.get("title")
         logging.getLogger().setLevel(logging.INFO)
@@ -284,7 +284,9 @@ class Image_request_form(CreateView):
     success_url = reverse_lazy("blog:home")
 
     def post(self, *args, **kwargs):
-        """This method should create multiple blog in formset."""
+        """This method should create multiple blog in formset.
+
+        """
         form = BlogImageForm(self.request.POST, self.request.FILES)
         if form.is_valid():
             obj = form.save(commit=False)

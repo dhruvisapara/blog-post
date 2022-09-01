@@ -34,12 +34,9 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('contact-admin/', contact_admin_site.urls),
-
-    ################ Social auth path #################
-    url(r'^oauth/', include('social_django.urls', namespace='social')),
+    path('accounts/', include('allauth.urls')),
 
     ################ restframwork path #################
-
 
     # path('api-auth/', include('rest_framework.urls')),
     # path('api-token-auth', views.obtain_auth_token),
