@@ -15,7 +15,10 @@ let totalForms = document.querySelector("#id_form-TOTAL_FORMS")
               });
         }
         function addForm(e){
+            //preventDefault() methods stop the default action of a selected element.
             e.preventDefault()
+            //cloneNode methods create copy of a node and return clone.
+            //cloneNode(true) saves children node also.
             let newForm = blogForm[0].cloneNode(true)
             let formRegex = RegExp(`form-(\\d){1}-`,'g')
             formNum++

@@ -58,6 +58,8 @@ class Comment(models.Model):
 
 
 class Image(models.Model):
-    """for one blog there are many related images"""
+    """for one blog there are many related images
+
+    """
     blog_image = models.ForeignKey(Blog, on_delete=models.CASCADE, related_name='image')
     post_image = models.ImageField(upload_to='images', null=True, blank=True)
